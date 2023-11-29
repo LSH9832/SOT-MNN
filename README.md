@@ -2,6 +2,7 @@
 
 - this project converts python inference code([pysot](https://github.com/STVIR/pysot)) to cpp using MNN SDK.
 - [MNN models](https://github.com/LSH9832/SOT-MNN/releases/download/v0.0.1/weights.zip) are directly available.
+- only AlexNet-or-MobileNetV2-backbone-based models are available, for resnet50 perform badly after converting to MNN model.
 
 ![](assets/demo.jpg)
 
