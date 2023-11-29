@@ -1,0 +1,11 @@
+template_model_file_path: "weights/siamrpn_alex_dwxcorr_otb/mnn/template.mnn"
+template_model_output_names: ["loc_k", "cls_k"]
+
+track_model_file_path: "weights/siamrpn_alex_dwxcorr_otb/mnn/track_full.mnn"
+track_model_input_names: ["x", "loc_k", "cls_k"]
+track_model_output_names: ["score", "pred_bbox"]
+
+model_config: "weights/siamrpn_alex_dwxcorr_otb/config.yaml"
+
+mode: "A"   # A: AUTO, C:CPU, G:CUDA
+num_threads: 3

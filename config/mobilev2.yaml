@@ -1,0 +1,11 @@
+template_model_file_path: "weights/siamrpn_mobilev2_l234_dwxcorr/mnn/template.mnn"
+template_model_output_names: ["cls1_k", "cls2_k", "cls3_k", "loc1_k", "loc2_k", "loc3_k"]
+
+track_model_file_path: "weights/siamrpn_mobilev2_l234_dwxcorr/mnn/track_full.mnn"
+track_model_input_names: ["x", "cls1_k", "cls2_k", "cls3_k", "loc1_k", "loc2_k", "loc3_k"]
+track_model_output_names: ["score", "pred_bbox"]
+
+model_config: "weights/siamrpn_mobilev2_l234_dwxcorr/config.yaml"
+
+mode: "A"   # A: AUTO, C:CPU, G:CUDA
+num_threads: 3

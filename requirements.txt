@@ -1,0 +1,6 @@
+torch
+numpy
+colorama
+yacs
+opencv-python
+loguru
