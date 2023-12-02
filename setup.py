@@ -36,8 +36,8 @@ if __name__ == "__main__":
                          "include_directories(${OpenCV_INCLUDE_DIRS})\n\n" \
                          "include_directories(/usr/include/eigen3)\n\n" \
                          "# --------------modify your own mnn path---------------\n" \
-                         f"include_directories(/home/lsh/code/mnn_dev/MNN-2.7.1/include)\n" \
-                         f"link_directories(/home/lsh/code/mnn_dev/MNN-2.7.1/build)\n" \
+                         f"include_directories({mnn_root}/include)\n" \
+                         f"link_directories({mnn_root}/build)\n" \
                          "# --------------modify your own mnn path---------------\n\n\n" \
                          "add_executable(mnn_sot\n" \
                          "    src/demo.cpp\n" \
